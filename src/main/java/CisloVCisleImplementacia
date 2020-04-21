@@ -1,0 +1,17 @@
+public class CisloVCisleImplementacia implements CisloVCisle {
+
+    public int zrataj(int hladaneCislo, int cislo){
+        int counter = 0;
+        while( cislo / 10 >= 1){
+            if( cislo % 10 == hladaneCislo){
+                counter++;
+            }
+            cislo = cislo / 10;
+        }
+        if( cislo % 10 == hladaneCislo){
+            counter++;
+        }
+        return counter;
+    }
+
+}
